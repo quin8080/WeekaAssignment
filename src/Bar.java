@@ -1,0 +1,18 @@
+
+import java.awt.Color;
+import hsa.Console;
+
+
+public class Bar {
+    int xloc,yloc, height;
+    Color col;;
+    
+    public void draw (Console c) {
+        c.setColor(col);
+        yloc = 500-height;
+        c.fillRect(xloc, yloc, 50, height);
+        c.drawString("Value: " + height, xloc, yloc-10);
+        
+        
+    }
+}
